@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
 
             if (hit.collider.gameObject.name == name)
             {
-                Debug.Log("HI");
                 toggleHighlight();
             }
 
@@ -85,8 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Vector3.Distance(wayPoints[j].transform.position, transform.position) < 0.45f)
             {
-                wayPoints[j].SetActive(false);
-               // Debug.Log(j);
+                wayPoints[j].SetActive(false); 
                 if (j < 2)
                 {
                     WayPoint = wayPoints[j + 1];
