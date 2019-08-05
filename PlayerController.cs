@@ -9,15 +9,18 @@ public class PlayerController : MonoBehaviour
 {
     public Camera cam;
     public NavMeshAgent agent;
-    Material[] matArray;
     public Material highlight;
     public Material seeThru;
-    GameObject WayPoint;
-    private int i = 0;
     public GameObject markers;
-    GameObject[] wayPoints = new GameObject[3];
+
     private bool highlighted = false;
+    private int i = 0;
+
+
     LineRenderer lineRenderer;
+    GameObject[] wayPoints = new GameObject[3];
+    GameObject WayPoint;
+    Material[] matArray;
 
     private void Start()
     {
@@ -42,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
             Vector3[] points = new Vector3[3];
 
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.name == "Ground")
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.name == "Cube")
             {
                 if (wayPoints[1].activeSelf && wayPoints[1].activeSelf && !wayPoints[2].activeSelf)
                 {
