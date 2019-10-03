@@ -71,7 +71,6 @@ public class PlayerController : MonoBehaviour
                 }
 
                 nextTarget();
-
             }
 
             if (hit.collider.gameObject.name == name)
@@ -97,7 +96,6 @@ public class PlayerController : MonoBehaviour
                     agent.GetComponent<MeshRenderer>().materials = matArray;
                 }
             }
-
         }
 
         if (wayPoints[0].activeSelf)
