@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Loop : MonoBehaviour
 {
-
     private BoxCollider2D collider;      
     private float horizontalLength;      
     private void Awake()
