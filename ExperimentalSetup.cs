@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Experiment : MonoBehaviour
 {
-
-
     public GameObject cube;
     public GameObject fixationPlane1;
     public GameObject fixationPlane2;
@@ -18,7 +16,6 @@ public class Experiment : MonoBehaviour
         makeFixationCross();
         hideFixationCross();
     }
-
 
     // Update is called once per frame
     void Update()
@@ -33,9 +30,7 @@ public class Experiment : MonoBehaviour
             active = false;
             StartCoroutine(procedure());
         }
-
     }
-
 
     void makeCube()
     {
@@ -62,7 +57,6 @@ public class Experiment : MonoBehaviour
     {
         cube.SetActive(true);
     }
-
 
     void makeFixationCross()
     {
@@ -91,9 +85,6 @@ public class Experiment : MonoBehaviour
         fixationPlane1.SetActive(true);
         fixationPlane2.SetActive(true);
     }
-
-
-
 
     IEnumerator procedure()
     {
